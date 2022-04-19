@@ -1,14 +1,25 @@
+/* controls the styling of the #select-login <fieldset> */
 #select-login{
     /* display: none; */
+
+    /* sets the background color of the #select-login <fieldset> to a bright pink color with the hexcode of #ffc0cb */
     background-color: #ffc0cb;
 }
 
+/* controls the styling of the #new-user <fieldset> */
 #new-user{
+    /* if "display: none" would be uncommented, then the #new-user <fieldset> would only be shown once the newuser button in the #select-login <fieldset> is clicked */
     /* display: none; */
+
+    /* sets the background color of the #new-user <fieldset> to a bright green color with the hexcode of #42f569 */
     background-color: #42f569;
 }
 
+/* controls the styling of the #existing-user <fieldset> */
 #existing-user{
+    /* if "display: none" would be uncommented, then the #existing-user <fieldset> would only be shown once the newuser button in the #select-login <fieldset> is clicked */
     /* display: none; */
+
+    /* sets the background color of the #existing-user <fieldset> to a bright green color with the hexcode of #42f569 */
     background-color: #42f569;
 }

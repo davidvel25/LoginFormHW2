@@ -8,22 +8,28 @@
 </head>
 
 <body>
+    <!-- creates a form  that stores data from the user regarding the button the user decides to click-->
     <form>
-        <!-- <section id="selectlogin-section"> -->
+            <!-- creates a fieldset with an id that encompasses the buttons for the section that asks the user if they are a new or existing user -->
             <fieldset id="select-login">
                 <legend>Welcome to the Login Machine!</legend>
+
+                <!-- asks the user to click this button if the user is a new user -->
                 <button type="button" id="clickNewuser">Click for New User</button>
+
+                <!-- asks the user to click this button if the user is an existing user -->
                 <button type="button" id="clickExistinguser">Click for Existing User</button>
 
-                
             </fieldset>
-        <!-- </section> -->
     </form>
 
+    <!-- creates a new form that stores data of the user based on the text input they type with a call to the newuser() function when the form is submitted using the "submit" button-->
     <form onsubmit="newuser()">
-        <!-- <section id="newuser-section"> -->
             <fieldset id="new-user" disabled>
+                <!-- "New User!" text is displayed using the legend tag -->
                 <legend>New User!</legend>
+
+                <!-- the user is prompted with a bunch of questions using the input textbox fields -->
                 <label for="uname1">UserName:</label>
                 <input type="text" id="uname1" name="uname1" value=""><br><br>
                 <label for="pw1">Password:</label>
@@ -32,22 +38,27 @@
                 <input type="text" id="city1" name="city1"><br><br>
                 <label for="state1">State (abbr.):</label>
                 <input type="text" id="state1" name="state1"><br><br>
+
+                <!-- the user will then submit their responses using the "submit" button at which the the "onsubmit" attribute is run and the alert() function is run -->
                 <input type="submit" value="Login" id="submitNewuser">
             </fieldset>
-        <!-- </section> -->
     </form>
 
+<!-- creates a new form that stores data of the user based on the text input they type with a call to the existinguser() function when the form is submitted using the "submit" button-->
     <form onsubmit="existinguser()">
-        <!-- <section id="existinguser-section"> -->
             <fieldset id="existing-user" disabled>
+                <!-- "Existing User!" text is displayed using the legend tag -->
                 <legend>Existing User!</legend>
+
+                <!-- the user is prompted with a bunch of questions using the input textbox fields -->
                 <label for="uname2">UserName:</label>
                 <input type="text" id="uname2" name="uname2" value=""><br><br>
                 <label for="pw2">Password:</label>
                 <input type="text" id="pw2" name="pw2"><br><br>
+
+                <!-- the user will then submit their responses using the "submit" button at which the the "onsubmit" attribute is run and the alert() function is run -->
                 <input type="submit" value="Login" id="submitExistinguser">
             </fieldset>
-        <!-- </section> -->
     </form>
     <script src="script.js"></script>
 </body>
