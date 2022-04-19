@@ -1,14 +1,14 @@
-.selectlogin-section{
+#select-login{
     /* display: none; */
     background-color: #ffc0cb;
 }
 
-.newuser-section{
+#new-user{
     display: none;
-    background-color: #006400;
+    background-color: #42f569;
 }
 
-.existinguser-section{
+#existing-user{
     display: none;
-    background-color: #006400;
+    background-color: #42f569;
 }

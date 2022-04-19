@@ -1,39 +1,54 @@
-<form>
-    <section id="selectlogin-section">
-        <fieldset id="select-login">
-            <legend>Welcome to the Login Machine!</legend>
-            <button type="button">Click for New User</button>
-            <button type="button">Click for Existing User</button>
-        </fieldset>
-    </section>
-</form>
+<!DOCTYPE html>
+<html>
 
-<form>
-    <section id="newuser-section">
-        <fieldset id="new-user" disabled>
-            <legend>New User!</legend>
-            <label for="uname">UserName:</label>
-            <input type="text" id="uname" name="uname"><br><br>
-            <label for="pw">Password:</label>
-            <input type="text" id="pw" name="pw"><br><br>
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city"><br><br>
-            <label for="state">State (abbr.):</label>
-            <input type="text" id="state" name="state"><br><br>
-            <input type="submit" value="Login">
-        </fieldset>
-    </section>
-</form>
+<head>
+    <meta charset="utf-8">
+    <title>loginFormHW2</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-<form>
-    <section id="existinguser-section">
-        <fieldset id="existing-user" disabled>
-            <legend>Existing User!</legend>
-            <label for="uname">UserName:</label>
-            <input type="text" id="uname" name="uname"><br><br>
-            <label for="pw">Password:</label>
-            <input type="text" id="pw" name="pw"><br><br>
-            <input type="submit" value="Login">
-        </fieldset>
-    </section>
-</form>
+<body>
+    <form>
+        <!-- <section id="selectlogin-section"> -->
+            <fieldset id="select-login">
+                <legend>Welcome to the Login Machine!</legend>
+                <button type="button" id="clickNewuser">Click for New User</button>
+                <button type="button" id="clickExistinguser">Click for Existing User</button>
+
+                
+            </fieldset>
+        <!-- </section> -->
+    </form>
+
+    <form onsubmit="newuser()">
+        <!-- <section id="newuser-section"> -->
+            <fieldset id="new-user" disabled>
+                <legend>New User!</legend>
+                <label for="uname1">UserName:</label>
+                <input type="text" id="uname1" name="uname1" value=""><br><br>
+                <label for="pw1">Password:</label>
+                <input type="text" id="pw1" name="pw1"><br><br>
+                <label for="city1">City:</label>
+                <input type="text" id="city1" name="city1"><br><br>
+                <label for="state1">State (abbr.):</label>
+                <input type="text" id="state1" name="state1"><br><br>
+                <input type="submit" value="Login" id="submitNewuser">
+            </fieldset>
+        <!-- </section> -->
+    </form>
+
+    <form onsubmit="existinguser()">
+        <!-- <section id="existinguser-section"> -->
+            <fieldset id="existing-user" disabled>
+                <legend>Existing User!</legend>
+                <label for="uname2">UserName:</label>
+                <input type="text" id="uname2" name="uname2" value=""><br><br>
+                <label for="pw2">Password:</label>
+                <input type="text" id="pw2" name="pw2"><br><br>
+                <input type="submit" value="Login" id="submitExistinguser">
+            </fieldset>
+        <!-- </section> -->
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
