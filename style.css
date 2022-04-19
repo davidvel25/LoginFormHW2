@@ -4,11 +4,11 @@
 }
 
 #new-user{
-    display: none;
+    /* display: none; */
     background-color: #42f569;
 }
 
 #existing-user{
-    display: none;
+    /* display: none; */
     background-color: #42f569;
 }
